@@ -82,24 +82,24 @@ public class Programa {
 		return data.nextInt();
 	}
 	
-	public static Cuadrado crearCuadrado(Scanner data)
+	public static Forma crearCuadrado(Scanner data)
 	{
 		Double aux;
 		System.out.print("Ingrese la medida del lado: ");
 		aux = data.nextDouble();
 		
-		return new Cuadrado(aux);
+		return Factory.createForma(aux);
 	}
 	
-	public static Rectangulo crearRectangulo(Scanner data)
+	public static Forma crearRectangulo(Scanner data)
 	{
 		Double aux, aux2;
-		System.out.print("Ingrese la medida del lado 1: ");
+		System.out.print("Ingrese la medida del lado 1 (base): ");
 		aux = data.nextDouble();
 		
-		System.out.print("Ingrese la medida del lado 2: ");
+		System.out.print("Ingrese la medida del lado 2 (altura): ");
 		aux2 = data.nextDouble();
 		
-		return new Rectangulo(aux, aux2);
+		return Factory.createForma(aux, aux2);
 	}
 }
