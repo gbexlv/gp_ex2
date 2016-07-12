@@ -62,7 +62,6 @@ public class Programa {
 					break;
 					
 				default:
-				//	init(lista);
 			}
 		} while(!exit);
 	}
