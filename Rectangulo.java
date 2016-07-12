@@ -19,4 +19,24 @@ public class Rectangulo extends Forma
 	{
 		return (2 * this.lado1) + (2 * this.lado2);
 	}
+	
+	public double base()
+	{
+		return this.lado1;
+	}
+	
+	public double altura()
+	{
+		return this.lado2;
+	}
+	
+	public double diametro()
+	{
+		return 0;
+	}
+	
+	public String nombre()
+	{
+		return "rectángulo";
+	}
 }

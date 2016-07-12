@@ -17,4 +17,24 @@ public class Cuadrado extends Forma
 	{
 		return 4 * this.lado;
 	}
+	
+	public double base()
+	{
+		return this.lado;
+	}
+	
+	public double altura()
+	{
+		return this.lado;
+	}
+	
+	public double diametro()
+	{
+		return 0;
+	}
+	
+	public String nombre()
+	{
+		return "cuadrado";
+	}
 }
